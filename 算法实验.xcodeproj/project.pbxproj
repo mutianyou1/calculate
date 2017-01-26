@@ -12,7 +12,10 @@
 		D21831491E26307700E91280 /* FeboNaYe.c in Sources */ = {isa = PBXBuildFile; fileRef = D21831471E26307700E91280 /* FeboNaYe.c */; };
 		D22AB3601E2770B7003F1B11 /* KMP.c in Sources */ = {isa = PBXBuildFile; fileRef = D22AB35E1E2770B7003F1B11 /* KMP.c */; };
 		D27CB3B01E38750800CE0641 /* Kruskal.c in Sources */ = {isa = PBXBuildFile; fileRef = D2D1C2981E3841C600FF1574 /* Kruskal.c */; };
+		D27CB3F61E38849100CE0641 /* Dijkstra.c in Sources */ = {isa = PBXBuildFile; fileRef = D27CB3F41E38849100CE0641 /* Dijkstra.c */; };
+		D27CB3F91E38860D00CE0641 /* Header.c in Sources */ = {isa = PBXBuildFile; fileRef = D27CB3F71E38860D00CE0641 /* Header.c */; };
 		D2F239101E3069F600D076EE /* BitTree.c in Sources */ = {isa = PBXBuildFile; fileRef = D2F2390E1E3069F600D076EE /* BitTree.c */; };
+		D2F8197F1E3989B500B6A274 /* Floyd.c in Sources */ = {isa = PBXBuildFile; fileRef = D2F8197D1E3989B500B6A274 /* Floyd.c */; };
 		D2FEC0711E286EA10072E576 /* NoramlStringIndexCaculator.c in Sources */ = {isa = PBXBuildFile; fileRef = D2FEC06F1E286EA10072E576 /* NoramlStringIndexCaculator.c */; };
 /* End PBXBuildFile section */
 
@@ -37,10 +40,16 @@
 		D21831481E26307700E91280 /* FeboNaYe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeboNaYe.h; sourceTree = "<group>"; };
 		D22AB35E1E2770B7003F1B11 /* KMP.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KMP.c; sourceTree = "<group>"; };
 		D22AB35F1E2770B7003F1B11 /* KMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMP.h; sourceTree = "<group>"; };
+		D27CB3F41E38849100CE0641 /* Dijkstra.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Dijkstra.c; sourceTree = "<group>"; };
+		D27CB3F51E38849100CE0641 /* Dijkstra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dijkstra.h; sourceTree = "<group>"; };
+		D27CB3F71E38860D00CE0641 /* Header.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Header.c; sourceTree = "<group>"; };
+		D27CB3F81E38860D00CE0641 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		D2D1C2981E3841C600FF1574 /* Kruskal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Kruskal.c; sourceTree = "<group>"; };
 		D2D1C2991E3841C600FF1574 /* Kruskal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kruskal.h; sourceTree = "<group>"; };
 		D2F2390E1E3069F600D076EE /* BitTree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BitTree.c; sourceTree = "<group>"; };
 		D2F2390F1E3069F600D076EE /* BitTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitTree.h; sourceTree = "<group>"; };
+		D2F8197D1E3989B500B6A274 /* Floyd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Floyd.c; sourceTree = "<group>"; };
+		D2F8197E1E3989B500B6A274 /* Floyd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Floyd.h; sourceTree = "<group>"; };
 		D2FEC06F1E286EA10072E576 /* NoramlStringIndexCaculator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NoramlStringIndexCaculator.c; sourceTree = "<group>"; };
 		D2FEC0701E286EA10072E576 /* NoramlStringIndexCaculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoramlStringIndexCaculator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +86,8 @@
 			children = (
 				D218313D1E25C0DB00E91280 /* main.c */,
 				D21831441E25C48B00E91280 /* StaticLinkList.c */,
+				D27CB3F71E38860D00CE0641 /* Header.c */,
+				D27CB3F81E38860D00CE0641 /* Header.h */,
 				D21831451E25C48B00E91280 /* StaticLinkList.h */,
 				D21831471E26307700E91280 /* FeboNaYe.c */,
 				D21831481E26307700E91280 /* FeboNaYe.h */,
@@ -86,6 +97,10 @@
 				D2FEC0701E286EA10072E576 /* NoramlStringIndexCaculator.h */,
 				D2D1C2981E3841C600FF1574 /* Kruskal.c */,
 				D2D1C2991E3841C600FF1574 /* Kruskal.h */,
+				D27CB3F41E38849100CE0641 /* Dijkstra.c */,
+				D27CB3F51E38849100CE0641 /* Dijkstra.h */,
+				D2F8197D1E3989B500B6A274 /* Floyd.c */,
+				D2F8197E1E3989B500B6A274 /* Floyd.h */,
 				D2F2390E1E3069F600D076EE /* BitTree.c */,
 				D2F2390F1E3069F600D076EE /* BitTree.h */,
 			);
@@ -150,11 +165,14 @@
 			files = (
 				D218313E1E25C0DB00E91280 /* main.c in Sources */,
 				D2F239101E3069F600D076EE /* BitTree.c in Sources */,
+				D27CB3F91E38860D00CE0641 /* Header.c in Sources */,
 				D21831461E25C48B00E91280 /* StaticLinkList.c in Sources */,
+				D2F8197F1E3989B500B6A274 /* Floyd.c in Sources */,
 				D22AB3601E2770B7003F1B11 /* KMP.c in Sources */,
 				D2FEC0711E286EA10072E576 /* NoramlStringIndexCaculator.c in Sources */,
 				D27CB3B01E38750800CE0641 /* Kruskal.c in Sources */,
 				D21831491E26307700E91280 /* FeboNaYe.c in Sources */,
+				D27CB3F61E38849100CE0641 /* Dijkstra.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 //
 
 #include "Kruskal.h"
-
+#include "Header.h"
 #define OK 1
 #define ERROE 0
 #define TRUE 1
@@ -17,19 +17,9 @@ typedef int Status;
 
 #define MAXEDGE 20
 #define MAXVEX 20
-#define INFINITY 5595
+#define INFINITY_ 5595
 
 
-typedef struct{
-    int arc[MAXVEX][MAXVEX];
-    int numVertextes,numEdges;
-    char data[MAXVEX];
-}MGraph;
-
-
-typedef struct {
-    int weight , begin, end;
-}Edge;
 
 
 void creatMGraph(MGraph *G){
@@ -44,7 +34,7 @@ void creatMGraph(MGraph *G){
             if (i == j) {
                 G ->arc[i][j] = 0;
             }else{
-                G ->arc[i][j] = G ->arc[j][i] = INFINITY;
+                G ->arc[i][j] = G ->arc[j][i] = INFINITY_;
             }
         }
     }
@@ -140,7 +130,7 @@ void MinTree(MGraph G){
     
     for (i = 0; i < G.numVertextes; i++) {
         for (j = i+1; j < G.numVertextes; j++) {
-            if (G.arc[i][j] < INFINITY) {
+            if (G.arc[i][j] < INFINITY_) {
                  edges[k].begin = i;
                  edges[k].end = j;
                  edges[k].weight = G.arc[i][j];

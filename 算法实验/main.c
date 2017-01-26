@@ -13,6 +13,8 @@
 #include "BitTree.h"
 #include "NoramlStringIndexCaculator.h"
 #include "Kruskal.h"
+#include "Dijkstra.h"
+#include "Floyd.h"
 int main(int argc, const char * argv[]) {
    
     //statciLinkListTest();
@@ -20,6 +22,8 @@ int main(int argc, const char * argv[]) {
     //printKMPNextArray();
     //printNoramlStringIndex();
    // printBitTree();
-    kruskalFindMinTree();
+    //kruskalFindMinTree();
+    //DijkstraShortPath();
+    FloydFindShortWay();
     return 0;
 }
