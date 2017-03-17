@@ -38,7 +38,7 @@ void creatMGraph_Floyd(MGraph *G){
     G ->arc[2][5] = 7;
     G ->arc[3][6] = 3;
     G ->arc[6][8] = 7;
-    G ->arc[8][7] = 4;
+    G ->arc[7][8] = 4;
     G ->arc[5][7] = 5;
     G ->arc[1][2] = 3;
     G ->arc[6][7] = 2;
@@ -67,17 +67,18 @@ void shortPathFloyd(MGraph G, Pathmatirx P, ShortPathTable D){
     for (v = 0; v < G.numVertextes; v++) {
         
         for (w= 0; w < G.numVertextes; w++) {
+            printf("wowo%dw%dwo\n",G.arc[v][w],w);
              D[v][w] = G.arc[v][w];
              P[v][w] = w;
         }
     }
-    
     for (k = 0; k < G.numVertextes; k++) {
         
         for (v = 0; v < G.numVertextes; v++) {
-            
+            //D[1][3] > D[1][1] + D[1][3]
             for (w = 0; w < G.numVertextes; w++) {
                 if (D[v][w] > D[v][k] + D[k][w]) {
+                    //printf("K--%d---v%d--w%d\n",k,v,w);
                     D[v][w] = D[v][k] + D[k][w];
                     P[v][w] = P[v][k];
                 }
@@ -85,12 +86,19 @@ void shortPathFloyd(MGraph G, Pathmatirx P, ShortPathTable D){
         }
     }
 }
-
+void logPath(ShortPathTable D,int targetPoint,Pathmatirx P){
+    int target = 0;
+    while (target < targetPoint) {
+        target = P[target][targetPoint];
+        printf("路径－－－%d\n",target);
+    }
+}
 void FloydFindShortWay(){
     MGraph G;
     Pathmatirx P;
     ShortPathTable D;
     creatMGraph_Floyd(&G);
     shortPathFloyd(G, P, D);
-    
+    logPath(D,8,P);
+    printf("最短%d\n",D[0][8]);
 }

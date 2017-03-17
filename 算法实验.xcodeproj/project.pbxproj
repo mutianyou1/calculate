@@ -14,6 +14,7 @@
 		D27CB3B01E38750800CE0641 /* Kruskal.c in Sources */ = {isa = PBXBuildFile; fileRef = D2D1C2981E3841C600FF1574 /* Kruskal.c */; };
 		D27CB3F61E38849100CE0641 /* Dijkstra.c in Sources */ = {isa = PBXBuildFile; fileRef = D27CB3F41E38849100CE0641 /* Dijkstra.c */; };
 		D27CB3F91E38860D00CE0641 /* Header.c in Sources */ = {isa = PBXBuildFile; fileRef = D27CB3F71E38860D00CE0641 /* Header.c */; };
+		D2CBCE781E7BCF2D00053CDF /* AOVFinder.c in Sources */ = {isa = PBXBuildFile; fileRef = D2CBCE761E7BCF2D00053CDF /* AOVFinder.c */; };
 		D2F239101E3069F600D076EE /* BitTree.c in Sources */ = {isa = PBXBuildFile; fileRef = D2F2390E1E3069F600D076EE /* BitTree.c */; };
 		D2F8197F1E3989B500B6A274 /* Floyd.c in Sources */ = {isa = PBXBuildFile; fileRef = D2F8197D1E3989B500B6A274 /* Floyd.c */; };
 		D2FEC0711E286EA10072E576 /* NoramlStringIndexCaculator.c in Sources */ = {isa = PBXBuildFile; fileRef = D2FEC06F1E286EA10072E576 /* NoramlStringIndexCaculator.c */; };
@@ -44,6 +45,8 @@
 		D27CB3F51E38849100CE0641 /* Dijkstra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dijkstra.h; sourceTree = "<group>"; };
 		D27CB3F71E38860D00CE0641 /* Header.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Header.c; sourceTree = "<group>"; };
 		D27CB3F81E38860D00CE0641 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		D2CBCE761E7BCF2D00053CDF /* AOVFinder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AOVFinder.c; sourceTree = "<group>"; };
+		D2CBCE771E7BCF2D00053CDF /* AOVFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOVFinder.h; sourceTree = "<group>"; };
 		D2D1C2981E3841C600FF1574 /* Kruskal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Kruskal.c; sourceTree = "<group>"; };
 		D2D1C2991E3841C600FF1574 /* Kruskal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kruskal.h; sourceTree = "<group>"; };
 		D2F2390E1E3069F600D076EE /* BitTree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BitTree.c; sourceTree = "<group>"; };
@@ -102,6 +105,8 @@
 				D2F8197D1E3989B500B6A274 /* Floyd.c */,
 				D2F8197E1E3989B500B6A274 /* Floyd.h */,
 				D2F2390E1E3069F600D076EE /* BitTree.c */,
+				D2CBCE761E7BCF2D00053CDF /* AOVFinder.c */,
+				D2CBCE771E7BCF2D00053CDF /* AOVFinder.h */,
 				D2F2390F1E3069F600D076EE /* BitTree.h */,
 			);
 			path = "算法实验";
@@ -165,6 +170,7 @@
 			files = (
 				D218313E1E25C0DB00E91280 /* main.c in Sources */,
 				D2F239101E3069F600D076EE /* BitTree.c in Sources */,
+				D2CBCE781E7BCF2D00053CDF /* AOVFinder.c in Sources */,
 				D27CB3F91E38860D00CE0641 /* Header.c in Sources */,
 				D21831461E25C48B00E91280 /* StaticLinkList.c in Sources */,
 				D2F8197F1E3989B500B6A274 /* Floyd.c in Sources */,

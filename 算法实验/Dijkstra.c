@@ -38,7 +38,7 @@ void creatMGraph_D(MGraph *G){
     G ->arc[2][5] = 7;
     G ->arc[3][6] = 3;
     G ->arc[6][8] = 7;
-    G ->arc[8][7] = 4;
+    G ->arc[7][8] = 4;
     G ->arc[5][7] = 5;
     G ->arc[1][2] = 3;
     G ->arc[6][7] = 2;
@@ -66,13 +66,12 @@ void shorestPath_Dijkstra(MGraph G,int v0, Pathmatirx P,ShortPathTable D){
     int final[MAXVEX];
     
     //init
+    //从v0出发的点的数组
     for (v = 0; v < G.numVertextes; v++) {
         final[v] = 0;
         D[v] = G.arc[v0][v];
         P[v] = 0;
     }
-    
-    
     D[v0] = 0;
     final[v0] = 1;
     
@@ -80,7 +79,6 @@ void shorestPath_Dijkstra(MGraph G,int v0, Pathmatirx P,ShortPathTable D){
     for (v = 1; v < G.numVertextes; v++) {
         
         min = INFINITY_;
-        
         //节点最小
         for (w = 0; w < G.numVertextes; w++) {
             
@@ -90,15 +88,35 @@ void shorestPath_Dijkstra(MGraph G,int v0, Pathmatirx P,ShortPathTable D){
             }
             
         }
-        
         //final[k] 做节点判断!final[w]
-        final[k] = 1;
+        final[k] = 1;          // V =  1
+        /*k=7  min=12           D[] = [0,1,4,7,5,8,10,12,17];
+                             final[]= [1,1,1,1,1,1,1,1, ];
+                                P[] = [0,0,1,4,2,4,03,06, 6];
+         G ->arc[0][1] = 1;
+         G ->arc[0][2] = 5;
+         G ->arc[1][3] = 7;
+         G ->arc[2][5] = 7;
+         G ->arc[3][6] = 3;
+         G ->arc[6][8] = 7;
+         G ->arc[8][7] = 4;
+         G ->arc[5][7] = 5;
+         G ->arc[1][2] = 3;
+         G ->arc[6][7] = 2;
+         G ->arc[3][4] = 2;
+         G ->arc[4][5] = 3;
+         G ->arc[1][4] = 5;
+         G ->arc[4][6] = 6;
+         G ->arc[2][4] = 1;
+         G ->arc[4][7] = 9;
+         */
          //路径累加
         for (w = 0; w < G.numVertextes; w++) {
             if (!final[w] && (min + G.arc[k][w]) < D[w]) {
                 D[w] = min + G.arc[k][w];
                 P[w] = k;
-                printf("(找到最小)%d\n",D[w]);
+                printf("(找到最小)%d---w:%d---k:%d--V:%d\n",D[w],w,k,v);
+                
             }
         }
         
