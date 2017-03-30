@@ -23,4 +23,16 @@ typedef struct{
 typedef struct {
     int weight , begin, end;
 }Edge;
+
+
+#define KMAXSIZE 10
+
+typedef struct{
+
+    int r[KMAXSIZE + 1];
+    int length;
+}SqList;
+
+
+void kswap(SqList *L, int i ,int j);
 #endif /* Header_h */

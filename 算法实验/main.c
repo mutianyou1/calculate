@@ -16,6 +16,16 @@
 #include "Dijkstra.h"
 #include "Floyd.h"
 #include "AOVFinder.h"
+#include "Binary_search.h"
+#include "BitTressSearch.h"
+#include "HashTable.h"
+#include "BubbleSort.h"
+#include "SimpleSelectSort.h"
+#include "StraightInertionSort.h"
+#include "ShellSort.h"
+#include "HeapSort.h"
+#include "MergeSort.h"
+#include "QuickSort.h"
 int main(int argc, const char * argv[]) {
    
     //statciLinkListTest();
@@ -25,7 +35,19 @@ int main(int argc, const char * argv[]) {
    // printBitTree();
     //kruskalFindMinTree();
     //DijkstraShortPath();
-    FloydFindShortWay();
+    //FloydFindShortWay();
     //aovFinder();
+    //aovFindCriticalPath();
+    //binarySearch();
+    // bitTressSearch();
+    //balanceBinarySearch();
+    // hashTable();
+    //bubbleSort();
+    //simpleSelectSort();
+    //straightInertionSort();
+    //shellSort();
+    //heapSort();
+   // mergeSort();
+    quickSort();
     return 0;
 }

@@ -11,4 +11,5 @@
 
 #include <stdio.h>
 void aovFinder();
+void aovFindCriticalPath();
 #endif /* AOVFinder_h */
